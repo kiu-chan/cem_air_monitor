@@ -1,3 +1,4 @@
+import 'package:cem_air_monitor/src/pages/map/map_page';
 import 'package:flutter/material.dart';
 
 class SelectPage extends StatefulWidget {
@@ -13,7 +14,7 @@ class _SelectPageState extends State<SelectPage> {
   @override
   Widget build(BuildContext context) {
     List<Widget> pages = [
-      const Placeholder(),
+      const MapPage(),
       const Placeholder(),
     ];
 
@@ -37,8 +38,8 @@ class _SelectPageState extends State<SelectPage> {
         selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.grey,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+          BottomNavigationBarItem(icon: Icon(Icons.map), label: 'Map'),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
         ],
       )
     );
